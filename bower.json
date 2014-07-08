@@ -1,0 +1,22 @@
+{
+  "name": "first-project",
+  "version": "0.0.0",
+  "description": "MTM370: First Project",
+  "main": "index.html",
+  "authors": [
+    "Jarrod Davis <jdavis@student.neumont.edu>"
+  ],
+  "license": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "holderjs": "~2.3.2"
+  }
+}
