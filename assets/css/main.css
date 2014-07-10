@@ -1,0 +1,15 @@
+/* Main Layout */
+.flex-container {
+	display: flex;
+	align-items: center;
+}
+
+/* Navigation */
+nav li {
+	list-style-type: none;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+}
