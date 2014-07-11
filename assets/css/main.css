@@ -110,9 +110,9 @@ nav a:hover:after {
 	width: 0px;
 	height: 0px;
 
-	border-left: 7px solid transparent;
-	border-right: 7px solid transparent;
-	border-top: 7px solid #0c9bdd;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #0c9bdd;
 	box-sizing: content-box;
 }
 
