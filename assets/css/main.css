@@ -1,10 +1,14 @@
-/* Main Layout */
+/**
+ * Main Layout
+ **/
 .flex-container {
 	display: flex;
 	align-items: center;
 }
 
-/* Navigation */
+/**
+ * Navigation
+ **/
 nav li {
 	list-style-type: none;
 }
