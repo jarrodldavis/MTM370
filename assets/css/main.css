@@ -122,9 +122,12 @@ nav a:hover:after {
  **/
 .featured {
 	justify-content: flex-start;
+	max-height: 343px;
+	overflow-y: scroll;
 	color: #ffffff;
 	background-image: url("../img/featured-bg.jpg");
-	max-height: 343px;
+	border-bottom: 1px solid #3c3a3c;
+	box-shadow: inset 0px 0px 106px #000000;
 }
 
 .featured h2 {
