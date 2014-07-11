@@ -1,5 +1,6 @@
+/* <editor-fold desc="Main Layout and Styles"> */
 /**
- * Main Layout
+ * Main Layout and Styles
  **/
 .flex-container {
 	display: flex;
@@ -13,6 +14,25 @@ body {
 	max-width: 1200px;
 	margin: 0px auto;
 	background-color: #000000;
+}
+
+/* Simulates page container but allows for full-bleed section backgrounds */
+.main-content-block {
+	padding-left: 125px;
+	padding-right: 125px;
+	flex: 1 100%;
+}
+
+/* TODO: encapsulate in desktop media query */
+.sidebar {
+	flex: 1 0px;
+	padding-right: 0px;
+}
+
+.gallery {
+	flex: 2 0px;
+	padding-left: 25px;
+	box-sizing: border-box;
 }
 
 h2 {
@@ -31,27 +51,9 @@ a:hover {
 .title-bold {
 	font-weight: bold;
 }
+/* </editor-fold> */
 
-/* Simulates page container but allows for full-bleed section backgrounds */
-.main-content-block {
-	padding-left: 125px;
-	padding-right: 125px;
-	flex: 1 100%;
-}
-
-/* TODO: encapsulate in desktop media query */
-
-.sidebar {
-	flex: 1 0px;
-	padding-right: 0px;
-}
-
-.gallery {
-	flex: 2 0px;
-	padding-left: 25px;
-	box-sizing: border-box;
-}
-
+/* <editor-fold desc="Header"> */
 /**
  * Header
  **/
@@ -74,6 +76,7 @@ header p {
 	font-size: 11px;
 }
 
+/* <editor-fold desc="Navigation"> */
 /**
  * Navigation
  **/
@@ -119,7 +122,10 @@ nav a:hover:after {
 	border-top: 6px solid #0c9bdd;
 	box-sizing: content-box;
 }
+/* </editor-fold> */
+/* </editor-fold> */
 
+/* <editor-fold desc="Featured Section"> */
 /**
  * Featured Section
  **/
@@ -160,7 +166,9 @@ nav a:hover:after {
 	line-height: 2em;
 	list-style-image: url("../img/featured-bullet.gif");
 }
+/* </editor-fold> */
 
+/* <editor-fold desc="Sidebar Section"> */
 /**
  * Sidebar
  **/
@@ -191,7 +199,9 @@ nav a:hover:after {
 .sidebar h3 a {
 	color: #0c9adc;
 }
+/* </editor-fold> */
 
+/* <editor-fold desc="Gallery Section"> */
 /**
  * Gallery
  */
@@ -219,7 +229,9 @@ p.gallery-link {
 	text-align: right;
 	font-style: italic;
 }
+/* </editor-fold> */
 
+/* <editor-fold desc="Footer"> */
 /**
  * Footer
  */
@@ -239,3 +251,4 @@ footer p {
 footer a {
 	color: #ffffff;
 }
+/* </editor-fold> */
