@@ -207,7 +207,8 @@ nav a:hover:after {
 	color: #00afff;
 }
 
-.gallery-link {
+p.gallery-link {
+	margin-top: 0.75em;
 	text-align: right;
 	font-style: italic;
 }
