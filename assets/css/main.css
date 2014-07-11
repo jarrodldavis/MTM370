@@ -9,6 +9,9 @@
 body {
 	flex-wrap: wrap;
 	font-family: "Verdana", sans-serif;
+	max-width: 1200px;
+	margin: 0px auto;
+	background-color: #000000;
 }
 
 /* Simulates page container but allows for full-bleed section backgrounds */
