@@ -156,3 +156,74 @@ nav a:hover:after {
 	list-style-image: url("../img/featured-bullet.gif");
 }
 
+/**
+ * Sidebar
+ **/
+.sidebar {
+	background-color: #0a0a0a;
+	background-image: linear-gradient(to bottom right, #0a0a0a, #101010);
+	color: #8f8f8f;
+}
+
+.sidebar > section {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.sidebar img {
+	flex-shrink: 0;
+	margin-right: 15px;
+}
+
+.sidebar h3, .sidebar p {
+	margin: 0px;
+}
+
+.sidebar h3 a {
+	color: #0c9adc;
+}
+
+/**
+ * Gallery
+ */
+.gallery {
+	color: #ffffff;
+	border-left: 1px solid #3c3a3c;
+	background-image: radial-gradient(ellipse at top left, #252625, #101010);
+}
+
+.gallery h2 {
+	margin-bottom: 0px;
+}
+
+.gallery p {
+	margin-top: 0.5em;
+	margin-bottom: 2em;
+}
+
+.gallery a {
+	color: #00afff;
+}
+
+.gallery-link {
+	text-align: right;
+	font-style: italic;
+}
+
+/**
+ * Footer
+ */
+footer {
+	background-color: #0a0a0a;
+	color: #8f8f8f;
+	text-align: center;
+	padding: 1em;
+}
+
+footer p {
+	margin: 0.5em;
+}
+
+footer a {
+	color: #ffffff;
+}
