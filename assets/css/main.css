@@ -102,3 +102,7 @@ nav a:hover:after {
 .featured {
 	justify-content: flex-start;
 }
+
+.title-bold {
+	font-weight: bold;
+}
