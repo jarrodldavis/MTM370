@@ -7,15 +7,12 @@
 }
 
 body {
+	font-size: 12px;
 	flex-wrap: wrap;
 	font-family: "Verdana", sans-serif;
 	max-width: 1200px;
 	margin: 0px auto;
 	background-color: #000000;
-}
-
-h1 {
-	font-size: 36px;
 }
 
 h2 {
@@ -29,10 +26,6 @@ a {
 
 a:hover {
 	text-decoration: underline;
-}
-
-p, ul {
-	font-size: 12px;
 }
 
 .title-bold {
@@ -72,10 +65,11 @@ header {
 header h1 {
 	margin: 0px;
 	color: #ffffff;
+	font-size: 36px;
 }
 
 header p {
-	margin: 0px;
+	margin: -5px 0px 0px;
 	color: #848484;
 	font-size: 11px;
 }
@@ -86,7 +80,7 @@ header p {
 
 /* Aligns and sizes navigation to site title */
 nav {
-	height: 2em;
+	height: 45px;
 	align-self: flex-start;
 	flex-wrap: wrap;
 }
@@ -116,7 +110,7 @@ nav a:hover:after {
 	content: '';
 
 	display: block;
-	margin: 5px auto -12px;
+	margin: 3px auto -10px;
 	width: 0px;
 	height: 0px;
 
