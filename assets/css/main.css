@@ -5,15 +5,17 @@
 .flex-container {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
-body {
+body.flex-container {
 	font-size: 12px;
 	flex-wrap: wrap;
 	font-family: "Verdana", sans-serif;
 	max-width: 1200px;
 	margin: 0px auto;
 	background-color: #000000;
+	align-items: stretch;
 }
 
 /* Simulates page container but allows for full-bleed section backgrounds */
