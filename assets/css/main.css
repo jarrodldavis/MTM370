@@ -20,6 +20,14 @@ h2 {
 	font-weight: lighter;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .title-bold {
 	font-weight: bold;
 }
@@ -84,7 +92,6 @@ nav ul {
 }
 
 nav a {
-	text-decoration: none;
 	display: block;
 	padding: 0.5em 20px;
 	color: #0c9bdd;
@@ -93,6 +100,7 @@ nav a {
 nav a:hover {
 	color: #ffffff;
 	text-shadow: white 0 0 1px;
+	text-decoration: none;
 }
 
 nav a:hover:after {
