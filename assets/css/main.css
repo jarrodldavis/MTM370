@@ -9,6 +9,10 @@ body {
 	flex-wrap: wrap;
 }
 
+header.flex-container {
+	justify-content: space-between;
+}
+
 /* Simulates page container but allows for full-bleed section backgrounds */
 .main-content-block {
 	padding: 0px 125px;
@@ -18,6 +22,14 @@ body {
 /**
  * Navigation
  **/
+
+/* Aligns and sizes navigation to site title */
+nav {
+	height: 2em;
+	margin: 1.34em 0;
+	align-self: flex-start;
+}
+
 nav li {
 	list-style-type: none;
 }
