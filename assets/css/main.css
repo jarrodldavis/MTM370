@@ -64,3 +64,23 @@ nav a {
 	padding: 0.5em 20px;
 	color: #0c9bdd;
 }
+
+nav a:hover {
+	color: #ffffff;
+	text-shadow: white 0 0 1px;
+}
+
+nav a:hover:after {
+	content: '';
+
+	display: block;
+	margin: 5px auto -12px;
+	width: 0px;
+	height: 0px;
+
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #0c9bdd;
+	box-sizing: content-box;
+}
+
