@@ -3,7 +3,16 @@
  **/
 .flex-container {
 	display: flex;
-	align-items: center;
+}
+
+body {
+	flex-wrap: wrap;
+}
+
+/* Simulates page container but allows for full-bleed section backgrounds */
+.main-content-block {
+	padding: 0px 125px;
+	flex: 1 100%;
 }
 
 /**
