@@ -8,11 +8,13 @@
 
 body {
 	flex-wrap: wrap;
+	font-family: "Verdana", sans-serif;
 }
 
 /* Simulates page container but allows for full-bleed section backgrounds */
 .main-content-block {
-	padding: 0px 125px;
+	padding-left: 125px;
+	padding-right: 125px;
 	flex: 1 100%;
 }
 
