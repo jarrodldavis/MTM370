@@ -243,6 +243,12 @@ nav a:hover:after {
 	margin-bottom: 2em;
 }
 
+.gallery img {
+	border: 1px solid #272727;
+	margin: 10px;
+	box-shadow: 0 0 0 8px #0a0a0a, 0 0 0 1px #252525, 0 0 0 1px #020102;
+}
+
 .gallery a {
 	color: #00afff;
 }
