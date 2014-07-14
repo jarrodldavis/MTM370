@@ -313,12 +313,12 @@ footer {
 	background-color: #0a0a0a;
 	color: #8f8f8f;
 	text-align: center;
-	padding: 1em;
+	padding: 25px;
 	font-size: 11px;
 }
 
 footer p {
-	margin: 0.5em;
+	margin: 0px;
 }
 
 footer a {
