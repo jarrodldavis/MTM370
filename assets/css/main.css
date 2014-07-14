@@ -332,3 +332,26 @@ footer a {
 	color: #ffffff;
 }
 /* </editor-fold> */
+
+/* <editor-fold desc="Retina"> */
+/**
+ * Retina Background Images
+ */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-moz-device-pixel-ratio: 2) {
+	.featured {
+		background-image: url("../img/featured-bg@2x.jpg");
+		background-size: 1200px auto;
+	}
+
+	.featured li:before {
+		background: url("../img/featured-bullet@2x.png");
+		background-size: 16px auto;
+	}
+
+	.sidebar > section > div:first-child {
+		background-image: url('../img/lower-section@2x.png');
+		background-size: 300px auto;
+	}
+}
+/* </editor-fold> */

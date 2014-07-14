@@ -23,7 +23,7 @@
 		</header>
 		<section class="featured main-content-block flex-container">
 			<div>
-				<img src="assets/img/screenshot.png" alt="Screenshot of MobileApp" width="243" height="288" />
+				<img class="b-lazy" src="assets/img/placeholder.gif" data-src="assets/img/screenshot.png" alt="Screenshot of MobileApp" width="243" height="288" />
 			</div>
 			<div>
 				<h2>Your <span class="title-bold">Mobile</span> App&hellip;</h2>
@@ -65,10 +65,10 @@
 			<h2>Your <span class="title-bold">Mobile</span> App</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ornare enim. Vestibulum ut arcu ipsum, nec semper eros. Nam accumsan placerat consectetur. Aliquam erat volutpat. Nullam nec justo justo. Maecenas aliquam mollis erat in rhoncus. Mauris metus sem, lobortis et rutrum feugiat, pharetra id risus.</p>
 			<div class="flex-container">
-				<img src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
-				<img src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
-				<img src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
-				<img src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
+				<img class="b-lazy" src="assets/img/placeholder.gif" data-src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
+				<img class="b-lazy" src="assets/img/placeholder.gif" data-src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
+				<img class="b-lazy" src="assets/img/placeholder.gif" data-src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
+				<img class="b-lazy" src="assets/img/placeholder.gif" data-src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
 			</div>
 			<p class="gallery-link"><a href="#">More From The Gallery&hellip;</a></p>
 		</section>
@@ -77,6 +77,14 @@
 			<p>Copyright Your Mobile App, All Rights Reserved</p>
 			<p>Design By <a href="#">Richard Carpenter</a></p>
 		</footer>
-		<script src="bower_components/holderjs/holder.js"></script>
+		<script src="assets/js/blazy.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				(function() {
+					// Initialize
+					new Blazy();
+				})();
+			});
+		</script>
 	</body>
 </html>
