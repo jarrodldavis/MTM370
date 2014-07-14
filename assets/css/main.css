@@ -50,6 +50,10 @@ a:hover {
 	text-decoration: underline;
 }
 
+p {
+	line-height: 18px;
+}
+
 .title-bold {
 	font-weight: bold;
 }
@@ -107,7 +111,7 @@ nav a {
 
 nav a:hover {
 	color: #ffffff;
-	text-shadow: white 0 0 1px;
+	text-shadow: white 0px 0px 1px;
 	text-decoration: none;
 }
 
@@ -115,7 +119,7 @@ nav a:hover:after {
 	content: '';
 
 	display: block;
-	margin: 3px auto -10px;
+	margin: 3px auto -9px;
 	width: 0px;
 	height: 0px;
 
@@ -133,6 +137,7 @@ nav a:hover:after {
  **/
 .featured {
 	justify-content: flex-start;
+	height: 343px;
 	max-height: 343px;
 	color: #ffffff;
 	background-image: url("../img/featured-bg.jpg");
@@ -161,13 +166,26 @@ nav a:hover:after {
 }
 
 .featured ul {
+	padding-left: 6px;
 	margin-bottom: 40px;
+	list-style-type: none;
 }
 
 .featured li {
-	line-height: 2em;
-	list-style-image: url("../img/featured-bullet.gif");
+	line-height: 30px;
 }
+
+.featured li:before {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 17px;
+	margin-top: -3px;
+	background: url("../img/featured-bullet.png");
+	vertical-align: middle;
+}
+
 /* </editor-fold> */
 
 /* <editor-fold desc="Sidebar Section"> */
