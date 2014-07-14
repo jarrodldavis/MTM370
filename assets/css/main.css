@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Quicksand Bold";
+	src: url("../fonts/quicksand-bold.woff");
+}
+
 /* <editor-fold desc="Main Layout and Styles"> */
 /**
  * Main Layout and Styles
@@ -73,11 +78,13 @@ header {
 header h1 {
 	margin: 0px;
 	color: #ffffff;
-	font-size: 36px;
+	font-family: "Quicksand Bold", "Verdana", sans-serif;
+	font-size: 34px;
+	line-height: 34px;
 }
 
 header p {
-	margin: -5px 0px 0px;
+	margin: -5px 2px 0px;
 	color: #848484;
 	font-size: 11px;
 }
@@ -89,7 +96,7 @@ header p {
 
 /* Aligns and sizes navigation to site title */
 nav {
-	height: 45px;
+	height: 34px;
 	align-self: flex-start;
 	flex-wrap: wrap;
 }
