@@ -137,8 +137,8 @@ nav a:hover:after {
  **/
 .featured {
 	justify-content: flex-start;
-	height: 343px;
-	max-height: 343px;
+	height: 328px;
+	max-height: 328px;
 	color: #ffffff;
 	background-image: url("../img/featured-bg.jpg");
 	border-bottom: 1px solid #3c3a3c;
@@ -155,9 +155,35 @@ nav a:hover:after {
 	color: #ffffff;
 }
 
-.featured img {
+.featured > div:first-child {
 	flex-shrink: 0;
-	margin: 50px;
+}
+
+.featured img {
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-right: -20px;
+	border-bottom: 1px solid;
+	border-image-source: linear-gradient(to right, rgba(18, 87, 121, 0), #022544, rgba(13, 107, 153, 0));
+	border-image-slice: 0 0 100%;
+}
+
+.featured > div:first-child:after {
+	content: '';
+	display: block;
+
+	width: 100%;
+	padding-right: 20px;
+	height: 26px;
+	margin-bottom: -26px;
+
+	margin-top: -2px;
+	border-top: 1px solid;
+	border-image-source: linear-gradient(to right, rgba(21, 94, 127, 0), #82f9fa, rgba(19, 119, 164, 0));
+	border-image-slice: 100% 0 0;
+
+	background-image: linear-gradient(to right, rgba(38, 183, 241, 0) 10%, #26b7f1, rgba(38, 183, 241, 0) 90%);
+	/*background-image: radial-gradient(circle, #26b7f1, rgba(38, 183, 241, 0));*/
 }
 
 .featured .list-intro {
