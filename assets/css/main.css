@@ -337,8 +337,9 @@ footer a {
 /**
  * Retina Background Images
  */
-@media screen and (-webkit-min-device-pixel-ratio: 2),
-screen and (min-moz-device-pixel-ratio: 2) {
+@media
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
 	.featured {
 		background-image: url("../img/featured-bg@2x.jpg");
 		background-size: 1200px auto;
