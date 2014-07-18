@@ -32,11 +32,11 @@ body.flex-container {
 
 /* TODO: encapsulate in desktop media query */
 .sidebar, .gallery {
-	padding-top: 23px;
+	padding-top: 22px;
 }
 
 .sidebar {
-	flex: 98.5 0px;
+	flex: 97.5 0px;
 	padding-right: 0px;
 }
 
@@ -161,7 +161,6 @@ nav a:hover:after {
 	color: #ffffff;
 	font-size: 12px;
 	background: url("../img/featured-bg.jpg");
-	border-bottom: 1px solid #3c3a3c;
 	box-shadow: inset 0px 0px 90px -15px #000000;
 }
 
@@ -245,6 +244,16 @@ nav a:hover:after {
 
 /* </editor-fold> */
 
+.horz-divider {
+	height: 1px;
+	background-color: #000000;
+	width: 100%;
+	border: 0px;
+	border-bottom: 1px solid #3c3a3c;
+	border-image-source: linear-gradient(to right, rgba(76, 76, 78, 0.2), #4c4c4e, rgba(76, 76, 78, 0.2));
+	border-image-slice: 0 0 100% 0;
+}
+
 /* <editor-fold desc="Contact Section"> */
 .contact {
 	color: #000000;
@@ -299,6 +308,12 @@ nav a:hover:after {
 	background-image: linear-gradient(to bottom right, #0a0a0a, #101010);
 	color: #8f8f8f;
 	padding-right: 15px;
+
+	border: 0px;
+	border-right: 1px solid;
+	border-image-source: linear-gradient(to bottom, #201f20, #1a1b1b, rgba(17, 17, 17, 0.1));
+	border-image-slice: 0 100% 0 0;
+	margin-right: 1px;
 }
 
 .sidebar > section {
@@ -364,8 +379,12 @@ nav a:hover:after {
  */
 .gallery {
 	color: #ffffff;
-	border-left: 1px solid #3c3a3c;
-	background-image: radial-gradient(ellipse at top left, #252625, #101010);
+	background-color: #101010;
+	background-image: radial-gradient(ellipse at 130px 40px, #252625, #101010, rgba(16, 16, 16, 0.0));
+	border: 0px;
+	border-left: 1px solid;
+	border-image-source: linear-gradient(to bottom, #404040, #343636, rgba(34, 34, 34, 0.9));
+	border-image-slice: 0 0 0 100%;
 	align-items: flex-end;
 }
 
