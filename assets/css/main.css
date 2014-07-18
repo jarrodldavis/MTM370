@@ -31,14 +31,18 @@ body.flex-container {
 }
 
 /* TODO: encapsulate in desktop media query */
+.sidebar, .gallery {
+	padding-top: 23px;
+}
+
 .sidebar {
-	flex: 1 0px;
+	flex: 98.5 0px;
 	padding-right: 0px;
 }
 
 .gallery {
-	flex: 2 0px;
-	padding-left: 25px;
+	flex: 200 0px;
+	padding-left: 27px;
 	box-sizing: border-box;
 }
 
@@ -253,8 +257,8 @@ nav a:hover:after {
 }
 
 .sidebar > section {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 17px;
+	margin-bottom: 17px;
 }
 
 .sidebar img {
@@ -272,17 +276,27 @@ nav a:hover:after {
 
 .sidebar h3 a {
 	color: #0c9adc;
+	font-weight: lighter;
 }
 
 .sidebar > section > div:first-child {
 	min-width: 100px;
 	min-height: 100px;
-	margin-right: 15px;
+	margin-right: 13px;
 	background-image: url('../img/lower-section.png');
+}
+
+.sidebar > .live-in-action {
+	margin-top: 0px;
 }
 
 .live-in-action > div:first-child {
 	background-position: 0px 0px;
+}
+
+.live-in-action > div:first-child {
+	background-position: 0px 0px;
+	margin-bottom: -4px;
 }
 
 .free-trial > div:first-child {
@@ -291,6 +305,10 @@ nav a:hover:after {
 
 .free-support > div:first-child {
 	background-position: 200px 0px;
+}
+
+.free-support > div:last-child {
+	padding-top: 7px;
 }
 
 /* </editor-fold> */
@@ -303,21 +321,34 @@ nav a:hover:after {
 	color: #ffffff;
 	border-left: 1px solid #3c3a3c;
 	background-image: radial-gradient(ellipse at top left, #252625, #101010);
+	align-items: flex-end;
+}
+
+.gallery h2, .gallery p, .gallery div {
+	width: 100%;
 }
 
 .gallery h2 {
+	font-size: 29px;
+	margin-top: 0px;
 	margin-bottom: 0px;
+	letter-spacing: -2px;
 }
 
 .gallery p {
-	margin-top: 0.5em;
-	margin-bottom: 2em;
+	margin-top: 7px;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.gallery > div > div {
+	padding-top: 11px;
 }
 
 .gallery img {
 	border: 1px solid #272727;
 	margin: 10px;
-	box-shadow: 0 0 0 8px #0a0a0a, 0 0 0 1px #252525, 0 0 0 1px #020102;
+	box-shadow: 0px 0px 0px 8px #0a0a0a, 0px 0px 0px 9px #252525, 0px 0px 0px 10px #020102;
 }
 
 .gallery a {
@@ -325,9 +356,10 @@ nav a:hover:after {
 }
 
 p.gallery-link {
-	margin-top: 0.75em;
 	text-align: right;
 	font-style: italic;
+	margin-top: 11px;
+	margin-bottom: 24px;
 }
 /* </editor-fold> */
 
