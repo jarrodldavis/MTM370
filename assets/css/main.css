@@ -153,7 +153,7 @@ nav a:hover:after {
 /**
  * Featured Section
  **/
-.featured {
+.featured, .contact {
 	justify-content: flex-start;
 	align-items: flex-start;
 	height: 328px;
@@ -241,6 +241,51 @@ nav a:hover:after {
 	margin-top: -3px;
 	background: url("../img/featured-bullet.png");
 	vertical-align: middle;
+}
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Contact Section"> */
+.contact {
+	color: #000000;
+}
+
+.contact > div > p {
+	font-size: 14px;
+}
+
+.contact > div {
+	width: 40%;
+}
+
+.contact form {
+	margin-top: 50px;
+	margin-left: 20px;
+	width: 50%;
+}
+
+.contact form div {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.contact form label {
+	display: inline-block;
+	width: 30%;
+	text-align: right;
+	margin-right: 10px;
+	color: #ffffff;
+}
+
+.contact form input[type=submit] {
+	font-size: 16px;
+	width: 100px;
+	display: block;
+	margin: auto;
+}
+
+.contact form label + textarea {
+	vertical-align: top;
 }
 
 /* </editor-fold> */
