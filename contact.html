@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>MobileApp</title>
+		<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+	</head>
+	<body role="document" class="flex-container">
+		<header class="main-content-block flex-container">
+			<div>
+				<h1>MobileApp</h1>
+				<p>Your Mobile App Slogan</p>
+			</div>
+			<nav role="navigation">
+				<ul class="flex-container">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Download</a>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="featured main-content-block flex-container">
+			<div>
+				<img class="b-lazy" src="assets/img/screenshot.png" alt="Screenshot of MobileApp" width="243" height="288" />
+			</div>
+			<div>
+				<h2>Your <span class="title-bold">Mobile</span> App&hellip;</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ornare enim. Vestibulum ut arcu ipsum, nec semper eros. Nam accumsan placerat consectetur. Aliquam erat volutpat. Nullam nec justo justo. Maecenas aliquam mollis erat in rhoncus. Mauris metus sem, lobortis et rutrum feugiat, pharetra id.</p>
+				<p class="list-intro">Great Features&hellip;</p>
+				<ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+					<li>Lorem ipsum dolor sit amet,  ipsum dolor sit amet, consectetur.</li>
+					<li>adipiscing elit.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+				</ul>
+			</div>
+		</section>
+
+		<div class="sidebar main-content-block">
+			<section class="flex-container live-in-action">
+				<div title="'Live In Action' movie and popcorn icon">&nbsp;</div>
+				<div>
+					<h3><a href="#">Live In Action</a></h3>
+					<p>See the app live in action on some of the latest phones.</p>
+				</div>
+			</section>
+			<section class="flex-container free-trial">
+				<div title="'Free Trial' gear icon">&nbsp;</div>
+				<div>
+					<h3><a href="#">Free Trial</a></h3>
+					<p>Try before you buy. Download the latest free trial version.</p>
+				</div>
+			</section>
+			<section class="flex-container free-support">
+				<div title="'Free Support' hammer and wrench icon">&nbsp;</div>
+				<div>
+					<h3><a href="#">Free Support</a></h3>
+					<p>Need help? Found a bug? We can help. Free Tech Support</p>
+				</div>
+			</section>
+		</div>
+		<section class="gallery main-content-block flex-container">
+			<div>
+				<h2>Your <span class="title-bold">Mobile</span> App</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ornare enim. Vestibulum ut arcu ipsum, nec semper eros. Nam accumsan placerat consectetur. Aliquam erat volutpat. Nullam nec justo justo. Maecenas aliquam mollis erat in rhoncus. Mauris metus sem, lobortis et rutrum feugiat, pharetra id risus.</p>
+				<div class="flex-container">
+					<img class="b-lazy" src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
+					<img class="b-lazy" src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
+					<img class="b-lazy" src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
+					<img class="b-lazy" src="assets/img/thumbnail.jpg" alt="Gallery Thumbnail" width="117" height="117" />
+				</div>
+				<p class="gallery-link"><a href="#">More From The Gallery&hellip;</a></p>
+			</div>
+		</section>
+
+		<footer class="main-content-block">
+			<p>Copyright Your Mobile App, All Rights Reserved</p>
+			<p>Design By <a href="#">Richard Carpenter</a></p>
+		</footer>
+		<script src="assets/js/blazy.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				(function() {
+					// Initialize
+					new Blazy({ src: "src" });
+				})();
+			});
+		</script>
+	</body>
+</html>
