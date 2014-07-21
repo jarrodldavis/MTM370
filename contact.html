@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title>MobileApp</title>
-		<!-- build:css assets/css/app.css -->
+		<title>MobileApp | Contact Us</title>
+		<!-- build:css assets/app.css -->
 		<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 		<!-- endbuild -->
@@ -24,21 +24,36 @@
 				</ul>
 			</nav>
 		</header>
-		<section class="featured main-content-block flex-container">
+		<section class="contact main-content-block flex-container">
 			<div>
-				<img class="b-lazy" src="assets/img/screenshot.png" alt="Screenshot of MobileApp" width="243" height="288" />
+				<h2>Contact Us</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ornare enim. Vestibulum ut arcu ipsum, nec semper eros. Nam accumsan placerat consectetur. Aliquam erat volutpat. Nullam nec justo justo. Maecenas aliquam mollis erat in rhoncus. Mauris metus sem, lobortis et rutrum feugiat, pharetra id risus.</p>
 			</div>
-			<div>
-				<h2>Your <span class="title-bold">Mobile</span> App&hellip;</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ornare enim. Vestibulum ut arcu ipsum, nec semper eros. Nam accumsan placerat consectetur. Aliquam erat volutpat. Nullam nec justo justo. Maecenas aliquam mollis erat in rhoncus. Mauris metus sem, lobortis et rutrum feugiat, pharetra id.</p>
-				<p class="list-intro">Great Features&hellip;</p>
-				<ul>
-					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-					<li>Lorem ipsum dolor sit amet,  ipsum dolor sit amet, consectetur.</li>
-					<li>adipiscing elit.</li>
-					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-				</ul>
-			</div>
+			<form>
+				<div>
+					<label for="firstName">First Name:</label>
+					<input name="firstName" id="firstName" type="text" />
+				</div>
+
+				<div>
+					<label for="lastName">Last Name:</label>
+					<input name="lastName" id="lastName" type="text" />
+				</div>
+
+				<div>
+					<label for="email">Email:</label>
+					<input name="email" id="email" type="email" />
+				</div>
+
+				<div>
+					<label for="message">Message:</label>
+					<textarea name="message" id="message" rows="5" cols="40"></textarea>
+				</div>
+
+				<div>
+					<input type="submit" value="Submit" />
+				</div>
+			</form>
 		</section>
 
 		<div class="horz-divider"></div>
@@ -62,7 +77,7 @@
 				<div title="'Free Support' hammer and wrench icon">&nbsp;</div>
 				<div>
 					<h3><a href="#">Free Support</a></h3>
-					<p>Need help? Found a bug? We can help. Free Tech Support.</p>
+					<p>Need help? Found a bug? We can help. Free Tech Support</p>
 				</div>
 			</section>
 		</div>
@@ -84,7 +99,7 @@
 			<p>Copyright Your Mobile App, All Rights Reserved</p>
 			<p>Design By <a href="#">Richard Carpenter</a></p>
 		</footer>
-		<!-- build:js assets/js/app.js -->
+		<!-- build:js assets/app.js -->
 		<script src="assets/js/blazy.js"></script>
 		<!-- endbuild -->
 		<script>

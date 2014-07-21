@@ -1,0 +1,476 @@
+@font-face {
+	font-family: "Quicksand Bold";
+	src: url("../fonts/quicksand-bold.woff");
+}
+
+/* <editor-fold desc="Main Layout and Styles"> */
+/**
+ * Main Layout and Styles
+ **/
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body.flex-container {
+	font-size: 12px;
+	flex-wrap: wrap;
+	font-family: "Verdana", sans-serif;
+	max-width: 1200px;
+	margin: 0px auto;
+	background-color: #000000;
+	align-items: stretch;
+}
+
+/* Simulates page container but allows for full-bleed section backgrounds */
+.main-content-block {
+	padding-left: 125px;
+	padding-right: 125px;
+	flex: 1 100%;
+}
+
+/* TODO: encapsulate in desktop media query */
+.sidebar, .gallery {
+	padding-top: 22px;
+}
+
+.sidebar {
+	flex: 97.5 0px;
+	padding-right: 0px;
+}
+
+.gallery {
+	flex: 200 0px;
+	padding-left: 27px;
+	box-sizing: border-box;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: lighter;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	line-height: 18px;
+}
+
+.title-bold {
+	font-weight: bold;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Header"> */
+/**
+ * Header
+ **/
+header {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #202123;
+	background-image: linear-gradient(#202123, #070707);
+	height: 139px;
+	max-height: 139px;
+	box-sizing: border-box;
+}
+
+header h1 {
+	margin: 0px;
+	color: #ffffff;
+	font-family: "Quicksand Bold", "Verdana", sans-serif;
+	font-size: 36px;
+	line-height: 34px;
+}
+
+header p {
+	margin: -5px 1px 0px;
+	color: #848484;
+	font-size: 11px;
+}
+
+/* <editor-fold desc="Navigation"> */
+/**
+ * Navigation
+ **/
+
+/* Aligns and sizes navigation to site title */
+nav {
+	height: 34px;
+	align-self: flex-start;
+	flex-wrap: wrap;
+}
+
+nav ul {
+	font-size: 14px;
+	height: 100%;
+	padding: 0px;
+	margin: -2px -1px 0px 0px;
+	align-items: center;
+	list-style: none;
+}
+
+nav a {
+	display: block;
+	padding: 0.5em 20px;
+	color: #0c9bdd;
+}
+
+nav li:last-child a {
+	padding-right: 0px;
+}
+
+nav a:hover {
+	color: #ffffff;
+	text-shadow: #ffffff 0px 0px 1px;
+	text-decoration: none;
+}
+
+nav a:hover:after {
+	content: '';
+
+	display: block;
+	margin: 2.5px auto -8.5px;
+	width: 0px;
+	height: 0px;
+
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #0c9bdd;
+	box-sizing: content-box;
+}
+/* </editor-fold> */
+/* </editor-fold> */
+
+/* <editor-fold desc="Featured Section"> */
+/**
+ * Featured Section
+ **/
+.featured, .contact {
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 328px;
+	max-height: 328px;
+	color: #ffffff;
+	font-size: 12px;
+	background: url("../img/featured-bg.jpg");
+	box-shadow: inset 0px 0px 90px -15px #000000;
+}
+
+.featured p {
+	margin-top: 9px;
+	margin-left: -1px;
+}
+
+.featured h2 {
+	font-size: 29px;
+	letter-spacing: -2px;
+	padding-top: 5px;
+	margin-bottom: 0px;
+	color: #000000;
+}
+
+.featured .title-bold {
+	color: #ffffff;
+}
+
+.featured > div:first-child {
+	flex-shrink: 0;
+	margin-top: 15px;
+}
+
+.featured img {
+	margin-left: -10px;
+	padding-left: 50px;
+	padding-right: 30px;
+	margin-right: -10px;
+	border-bottom: 1px solid;
+	border-image-source: linear-gradient(to right, rgba(18, 87, 121, 0.3), #022544, rgba(13, 107, 153, 0.3));
+	border-image-slice: 0 0 100%;
+}
+
+.featured > div:first-child:after {
+	content: '';
+	display: block;
+
+	width: 100%;
+	padding-right: 20px;
+	height: 26px;
+	margin-bottom: -26px;
+
+	margin-top: -3px;
+	border-top: 1px solid;
+	border-image-source: linear-gradient(to right, rgba(21, 94, 127, 0), #82f9fa, rgba(19, 119, 164, 0));
+	border-image-slice: 100% 0 0;
+
+	background-image: linear-gradient(to right, rgba(38, 183, 241, 0) 10%, #26b7f1, rgba(38, 183, 241, 0) 90%);
+	/*background-image: radial-gradient(circle, #26b7f1, rgba(38, 183, 241, 0));*/
+}
+
+.featured .list-intro {
+	color: #000000;
+	font-size: 14px;
+	margin-top: 17px;
+	margin-bottom: 0px;
+}
+
+.featured ul {
+	margin-top: 7px;
+	padding-left: 4px;
+	list-style-type: none;
+}
+
+.featured li {
+	line-height: 30px;
+}
+
+.featured li:before {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 15px;
+	margin-top: -3px;
+	background: url("../img/featured-bullet.png");
+	vertical-align: middle;
+}
+
+/* </editor-fold> */
+
+.horz-divider {
+	height: 1px;
+	background-color: #000000;
+	width: 100%;
+	border: 0px;
+	border-bottom: 1px solid #3c3a3c;
+	border-image-source: linear-gradient(to right, rgba(76, 76, 78, 0.2), #4c4c4e, rgba(76, 76, 78, 0.2));
+	border-image-slice: 0 0 100% 0;
+}
+
+/* <editor-fold desc="Contact Section"> */
+.contact {
+	color: #000000;
+}
+
+.contact > div > p {
+	font-size: 14px;
+}
+
+.contact > div {
+	width: 40%;
+}
+
+.contact form {
+	margin-top: 50px;
+	margin-left: 20px;
+	width: 50%;
+}
+
+.contact form div {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.contact form label {
+	display: inline-block;
+	width: 30%;
+	text-align: right;
+	margin-right: 10px;
+	color: #ffffff;
+}
+
+.contact form input[type=submit] {
+	font-size: 16px;
+	width: 100px;
+	display: block;
+	margin: auto;
+}
+
+.contact form label + textarea {
+	vertical-align: top;
+}
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Sidebar Section"> */
+/**
+ * Sidebar
+ **/
+.sidebar {
+	background-color: #0a0a0a;
+	background-image: linear-gradient(to bottom right, #0a0a0a, #101010);
+	color: #8f8f8f;
+	padding-right: 15px;
+
+	border: 0px;
+	border-right: 1px solid;
+	border-image-source: linear-gradient(to bottom, #201f20, #1a1b1b, rgba(17, 17, 17, 0.1));
+	border-image-slice: 0 100% 0 0;
+	margin-right: 1px;
+}
+
+.sidebar > section {
+	margin-top: 17px;
+	margin-bottom: 17px;
+}
+
+.sidebar img {
+	flex-shrink: 0;
+	margin-right: 15px;
+}
+
+.sidebar h3 {
+	font-size: 18px;
+}
+
+.sidebar h3, .sidebar p {
+	margin: 0px;
+}
+
+.sidebar h3 a {
+	color: #0c9adc;
+	font-weight: lighter;
+}
+
+.sidebar > section > div:first-child {
+	min-width: 100px;
+	min-height: 100px;
+	margin-right: 13px;
+	background-image: url('../img/lower-section.png');
+}
+
+.sidebar > .live-in-action {
+	margin-top: 0px;
+}
+
+.live-in-action > div:first-child {
+	background-position: 0px 0px;
+}
+
+.live-in-action > div:first-child {
+	background-position: 0px 0px;
+	margin-bottom: -4px;
+}
+
+.free-trial > div:first-child {
+	background-position: 100px 0px;
+}
+
+.free-support > div:first-child {
+	background-position: 200px 0px;
+}
+
+.free-support > div:last-child {
+	padding-top: 7px;
+}
+
+/* </editor-fold> */
+
+/* <editor-fold desc="Gallery Section"> */
+/**
+ * Gallery
+ */
+.gallery {
+	color: #ffffff;
+	background-color: #101010;
+	background-image: radial-gradient(ellipse at 130px 40px, #252625, #101010, rgba(16, 16, 16, 0.0));
+	border: 0px;
+	border-left: 1px solid;
+	border-image-source: linear-gradient(to bottom, #404040, #343636, rgba(34, 34, 34, 0.9));
+	border-image-slice: 0 0 0 100%;
+	align-items: flex-end;
+}
+
+.gallery h2, .gallery p, .gallery div {
+	width: 100%;
+}
+
+.gallery h2 {
+	font-size: 29px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	letter-spacing: -2px;
+}
+
+.gallery p {
+	margin-top: 7px;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.gallery > div > div {
+	padding-top: 11px;
+}
+
+.gallery img {
+	border: 1px solid #272727;
+	margin: 10px;
+	box-shadow: 0px 0px 0px 8px #0a0a0a, 0px 0px 0px 9px #252525, 0px 0px 0px 10px #020102;
+}
+
+.gallery a {
+	color: #00afff;
+}
+
+p.gallery-link {
+	text-align: right;
+	font-style: italic;
+	margin-top: 11px;
+	margin-bottom: 24px;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Footer"> */
+/**
+ * Footer
+ */
+footer {
+	border-top: 1px solid #1a1a1a;
+	background-color: #0a0a0a;
+	color: #8f8f8f;
+	text-align: center;
+	padding-top: 21px;
+	padding-bottom: 24px;
+	font-size: 11px;
+}
+
+footer p {
+	margin: 0px;
+	margin-left: -20px;
+}
+
+footer a {
+	color: #ffffff;
+}
+/* </editor-fold> */
+
+/* <editor-fold desc="Retina"> */
+/**
+ * Retina Background Images
+ */
+@media
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+	.featured {
+		background-image: url("../img/featured-bg@2x.jpg");
+		background-size: 1200px auto;
+	}
+
+	.featured li:before {
+		background: url("../img/featured-bullet@2x.png");
+		background-size: 16px auto;
+	}
+
+	.sidebar > section > div:first-child {
+		background-image: url('../img/lower-section@2x.png');
+		background-size: 300px auto;
+	}
+}
+/* </editor-fold> */
