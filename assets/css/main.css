@@ -493,6 +493,21 @@ only screen and (max-width: 1035px) {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
+	.featured {
+		height: inherit;
+		max-height: inherit;
+		min-height: 328px;
+		align-items: flex-end;
+	}
+
+	.featured > div:first-child {
+		margin-bottom: 25px;
+	}
+
+  .featured > div:last-child {
+	  padding-bottom: 20px;
+  }
 }
 
 @media
