@@ -407,12 +407,14 @@ nav a:hover:after {
 
 .gallery > div > div {
 	padding-top: 11px;
+	flex-wrap: wrap;
 }
 
 .gallery img {
 	border: 1px solid #272727;
 	margin: 10px;
 	box-shadow: 0px 0px 0px 8px #0a0a0a, 0px 0px 0px 9px #252525, 0px 0px 0px 10px #020102;
+	flex-shrink: 0;
 }
 
 .gallery a {
@@ -525,6 +527,14 @@ only screen and (max-width: 919px) {
 	.gallery {
 		flex: 0 1 auto;
 		box-sizing: border-box;
+		border: 0px;
+		border-top: 1px solid;
+		border-image-source: linear-gradient(to right, #404040, #343636, rgba(34, 34, 34, 0.9));
+		border-image-slice: 100% 0 0 0;
+	}
+
+	.gallery > div > div {
+		justify-content: space-around;
 	}
 }
 
@@ -554,16 +564,12 @@ only screen and (max-width: 699px) {
 
 @media
 only screen and (max-width: 599px) {
-	.gallery div.flex-container {
-		flex-flow: column;
-	}
-
 	.gallery p {
 		text-align: inherit;
 	}
 
 	.gallery p.gallery-link {
-		text-align: center;
+		text-align: right;
 	}
 }
 
@@ -603,8 +609,13 @@ only screen and (max-width: 499px) {
 
 @media
 only screen and (max-width: 349px) {
-	.sidebar > section {
+	.sidebar > section, .gallery > div > div {
 		flex-flow: column;
+	}
+
+	.gallery p.gallery-link {
+		padding-top: 10px;
+		text-align: center;
 	}
 }
 /* </editor-fold> */
