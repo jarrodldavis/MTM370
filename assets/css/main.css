@@ -105,7 +105,6 @@ header p {
 nav {
 	height: 34px;
 	align-self: flex-start;
-	flex-wrap: wrap;
 }
 
 nav ul {
