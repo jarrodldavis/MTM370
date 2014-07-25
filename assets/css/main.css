@@ -266,22 +266,29 @@ nav a:hover:after {
 }
 
 .contact > div {
-	width: 40%;
+	flex-basis: 50%;
 }
 
 .contact form {
 	margin-top: 50px;
 	margin-left: 20px;
-	width: 50%;
+	flex-basis: 50%;
 }
 
 .contact form div {
 	margin-top: 15px;
 	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.contact form input, .contact form textarea {
+	flex-basis: 100%;
+	flex-shrink: 1;
 }
 
 .contact form label {
-	display: inline-block;
+	white-space: nowrap;
 	width: 30%;
 	text-align: right;
 	margin-right: 10px;
@@ -293,10 +300,12 @@ nav a:hover:after {
 	width: 100px;
 	display: block;
 	margin: auto;
+	flex-basis: auto;
+	flex-shrink: 0;
 }
 
-.contact form label + textarea {
-	vertical-align: top;
+.contact form textarea {
+	min-height: 5em;
 }
 
 /* </editor-fold> */
@@ -462,7 +471,7 @@ footer a {
 @media
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
-	.featured {
+	.featured, .contact {
 		background-image: url("../img/featured-bg@2x.jpg");
 		background-size: 1200px auto;
 	}
@@ -498,10 +507,13 @@ only screen and (max-width: 1035px) {
 		padding-right: 20px;
 	}
 
-	.featured {
+	.featured, .contact {
 		height: inherit;
 		max-height: inherit;
 		min-height: 328px;
+	}
+
+	.featured {
 		align-items: flex-end;
 	}
 
@@ -587,6 +599,20 @@ only screen and (max-width: 699px) {
 	nav li:last-child a {
 		padding-right: 20px;
 	}
+
+	.contact form div {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.contact form label {
+		text-align: left;
+		padding-bottom: 5px;
+	}
+
+	.contact form input {
+		 flex-basis: auto;
+	 }
 }
 
 @media
@@ -632,6 +658,17 @@ only screen and (max-width: 499px) {
 		border-left: 6px solid #0c9bdd;
 		box-sizing: content-box;
 	}
+
+  .contact {
+	  flex-flow: column;
+	  align-items: stretch;
+  }
+
+  .contact > div, .contact > form {
+	  flex-shrink: 0;
+	  flex-basis: auto;
+	  margin: 0px;
+  }
 }
 
 @media
