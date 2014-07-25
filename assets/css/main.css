@@ -229,6 +229,8 @@ nav a:hover:after {
 
 .featured li {
 	line-height: 30px;
+	padding-left: 41px;
+	text-indent: -41px;
 }
 
 .featured li:before {
@@ -535,6 +537,31 @@ only screen and (max-width: 919px) {
 
 	.gallery > div > div {
 		justify-content: space-around;
+	}
+}
+
+@media
+only screen and (max-width: 769px) {
+	.featured {
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.featured > div:first-child {
+		flex-shrink: 0;
+	}
+
+	.featured img {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0px;
+	}
+
+	.featured > div:first-child:after {
+		padding: 0px;
+		height: 0px;
+		margin: -3px 0px 0px;
+		background-image: none;
 	}
 }
 
