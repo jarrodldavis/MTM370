@@ -588,7 +588,7 @@ only screen and (max-width: 699px) {
 
 	nav {
 		padding-top: 20px;
-		align-self: inherit;
+		align-self: center;
 	}
 
   nav ul {
@@ -632,7 +632,8 @@ only screen and (max-width: 499px) {
 	}
 
 	nav ul.flex-container {
-		display: block;
+		flex-direction: column;
+		align-items: stretch;
 	}
 
 	nav a {
