@@ -37,7 +37,7 @@ body.flex-container {
 
 .sidebar {
 	flex: 97.5 0px;
-	padding-right: 0px;
+	padding-right: 15px;
 }
 
 .gallery {
@@ -213,6 +213,10 @@ nav a:hover:after {
 	/*background-image: radial-gradient(circle, #26b7f1, rgba(38, 183, 241, 0));*/
 }
 
+.featured > div:last-child {
+	width: 100%;
+}
+
 .featured .list-intro {
 	color: #000000;
 	font-size: 14px;
@@ -317,7 +321,6 @@ nav a:hover:after {
 	background-color: #0a0a0a;
 	background-image: linear-gradient(to bottom right, #0a0a0a, #101010);
 	color: #8f8f8f;
-	padding-right: 15px;
 
 	border: 0px;
 	border-right: 1px solid;
@@ -529,7 +532,6 @@ only screen and (max-width: 1035px) {
 only screen and (max-width: 919px) {
 	.sidebar {
 		flex: 0 1 auto;
-		padding-right: 0px;
 		width: 100%;
 	}
 
@@ -549,6 +551,10 @@ only screen and (max-width: 919px) {
 	.gallery > div > div {
 		justify-content: space-around;
 	}
+
+  footer p {
+	  margin-left: 0;
+  }
 }
 
 @media
@@ -677,9 +683,18 @@ only screen and (max-width: 349px) {
 		flex-flow: column;
 	}
 
+	.sidebar > section > div:last-child {
+		width: 100%;
+	}
+
 	.gallery p.gallery-link {
 		padding-top: 10px;
 		text-align: center;
 	}
+
+  .main-content-block {
+	  padding-left: 10px;
+	  padding-right: 10px;
+  }
 }
 /* </editor-fold> */
